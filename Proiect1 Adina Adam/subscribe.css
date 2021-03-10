@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+
+  background-color: #40916C;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2D6A4F;
+}
+header a{
+  text-decoration: none;
+  color: #081C15;
+}
+header a:hover{
+  color: #718EA4;
+  transition: .5s;
+}
+h1{
+  color: white;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo-animation{
+  transition: all 1s;
+}
+.logo-animation:hover{
+	transform: scale(1.2);
+}
+
+header img{
+  height: 50px;
+  width: 50px;
+}
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  /* float: right; */
+  list-style-type: none;
+}
+nav li{
+  padding: 1rem;
+  /* background-color: rgb(72, 145, 116); */
+  background-color: #2D6A4F;
+  text-align: center;
+  width: 20%;
+}
+
+/* nav li:hover{
+  background-color: #1B4332;
+} */
+
+nav a{
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: skyBlue;
+  transition: .5s;
+}
+
+form {
+  border: 4px solid #f1f1f1;
+}
+
+.subscription {
+  padding: 20px;
+  background-color: #74C69D;
+}
+#userName, #email{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#culture, #language, #travel, #lifestile, #food{
+  margin-top: 16px;
+}
+
+.submit-subscribe{
+  background-color: #40916C;
+  color: white;
+  border: none;
+}
+
+.submit-subscribe:hover {
+  opacity: 0.8;
+}
+
+footer{
+  background-color: #2D6A4F;
+
+}
+
+footer p{
+  /* display: flex; */
+  text-align: center;
+  color: white;
+}
+footer ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;

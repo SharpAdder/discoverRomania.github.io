@@ -1,0 +1,268 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+
+  background-color: #40916C;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2D6A4F;
+}
+header a{
+  text-decoration: none;
+  color: white;
+}
+header a:hover{
+  color: #718EA4;
+  transition: .5s;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.logo-animation{
+  transition: all 1s;
+}
+.logo-animation:hover{
+	transform: scale(1.2);
+}
+
+header input{
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+/* .simple-calculator input::number{
+  color: red;
+} */
+
+header img{
+  height: 50px;
+  width: 50px;
+}
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  /* float: right; */
+  list-style-type: none;
+}
+nav li{
+  padding: 1rem;
+  /* background-color: rgb(72, 145, 116); */
+  background-color: #2D6A4F;
+  text-align: center;
+  width: 25%;
+}
+
+nav li:hover{
+  background-color: #1B4332;
+}
+
+nav a{
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: skyBlue;
+  transition: .5s;
+}
+
+.dropBtnTools{
+    background-color: #2D6A4F;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdownTools{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-contentTools{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-contentTools a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-contentTools a:hover{background-color: #ddd;}
+.dropdownTools:hover .dropdown-contentTools{
+  display: block;
+}
+.dropdownTools:hover .dropBtnTools{
+  /* background-color: #3e8e41; */background-color:#1B4332
+}
+main{
+  /* marginea de sus si 0 --> 0% stg dreapta 10% */
+  margin: 0 10%;
+  padding: 1rem;
+  /* background-color: white; */
+  background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1053&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow:0 0 5px 2px #282a2d;
+  background-size: 100%;
+  background-attachment: fixed;
+  /* background-image: repeating-radial-gradient(green, white); */
+  /* opacity: 0.5;
+  filter: blur(5px); */
+
+  /* margin-top: 0;
+  margin-bottom:0;
+  margin-left:10%;
+  margin-right:10%; */
+}
+
+main a{
+  text-decoration: none;
+}
+main ul{
+  list-style-type: none;
+}
+
+main .video{
+  width:100%;
+  height:400px;
+}
+.first, .second{
+  float:left;
+  width:50%;
+  height:100%;
+  object-fit:cover;
+}
+
+main .bran, .corvin, .peles, .pelisor, .savarsin, .transfagarasan, .transalpina, .danube, .bigar, .sphinx, .babele, .cemetery, .lipscani, .salt{
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid olive;
+}
+
+main #bran-castle, #corvin-castle, #peles-castle, #pelisor-castle, #savarsin-castle, #transfagarasan, #transalpina, #danube, #bigar-spring, #sphinx, #babele, #merry-cemetery, #lipscani, #salt-mine {
+  column-span: all;
+}
+main h3, h4, p, a{
+  color: white;
+}
+/* main iframe .second{
+
+} */
+/* .dropdown-castles {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-castles:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-mountains {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-mountains:hover .dropdown-contentMountains, .dropdownFestivals {
+  display: block;
+} */
+.buttons a:hover{
+  color: skyBlue;
+  transition: .5s;
+}
+.dropBtnCastles, .dropBtnMountains, .dropBtnWaters, .dropBtnAttractions, .dropBtnFestivals{
+  background-color: #2D6A4F;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdownCastles, .dropdownMountains, .dropdownWaters, .dropdownAttractions, .dropdownFestivals {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contentCastles, .dropdown-contenMountains, .dropdown-contentWaters, .dropdown-contentAttractions, .dropdown-contentFestivals {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-contentCastles a, .dropdown-contenMountains a, .dropdown-contentWaters a, .dropdown-contentAttractions a, .dropdown-contentFestivals a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-contentCastles a:hover, .dropdown-contenMountains a:hover, .dropdown-contentWaters a:hover, .dropdown-contentAttractions a:hover, .dropdown-contentFestivals a:hover {background-color: #ddd;}
+
+.dropdownCastles:hover .dropdown-contentCastles, .dropdownMountains:hover .dropdown-contenMountains, .dropdownWaters:hover .dropdown-contentWaters, .dropdownAttractions:hover .dropdown-contentAttractions, .dropdownFestivals:hover .dropdown-contentFestivals {display: block;}
+
+.dropdownCastles:hover .dropBtnCastles, .dropdownMountains:hover .dropBtnMountains, .dropdownWaters:hover .dropBtnWaters, .dropdownAttractions:hover .dropBtnAttractions, .dropdownFestivals:hover .dropBtnFestivals{background-color: #1B4332;}
+
+#easterEgg{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #2D6A4F;
+}
+
+footer{
+  background-color: #2D6A4F;
+
+}
+
+footer ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+footer p{
+  /* display: flex; */
+  text-align: center;
+}
+
+/* p{
+  color: black;
+} */
+
+/* .impailer{
+  color: darkRed;
+} */
